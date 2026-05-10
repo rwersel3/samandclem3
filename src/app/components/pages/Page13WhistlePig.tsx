@@ -31,7 +31,7 @@ export default function Page13WhistlePig({ audioEnabled, onComplete }: Page13Whi
     play('leaves-rustle', { volume: 0.3 });
     if (dist < 8) {
       setFound(true);
-      play('success-chime', { volume: 0.6 });
+      play('success-chime', { volume: 0.2 });
       setTimeout(onComplete, 1000);
     }
   };

@@ -33,7 +33,7 @@ export default function Page18MakingMusic({ audioEnabled, onComplete }: Page18Ma
       if (newActive.length === birds.length) {
         setTimeout(() => {
           setComplete(true);
-          play('success-chime', { volume: 0.7 });
+          play('success-chime', { volume: 0.2 });
           setTimeout(onComplete, 2000);
         }, 500);
       }

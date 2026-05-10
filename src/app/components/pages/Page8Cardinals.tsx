@@ -26,11 +26,11 @@ export default function Page8Cardinals({ audioEnabled, onComplete }: Page8Cardin
 
   const placeTwig = (id: number) => {
     if (!twigsPlaced.includes(id)) {
-      play('collect-chime', { volume: 0.5 });
+      play('collect-chime', { volume: 0.15 });
       const newPlaced = [...twigsPlaced, id];
       setTwigsPlaced(newPlaced);
       if (newPlaced.length === 5) {
-        play('success-chime', { volume: 0.6 });
+        play('success-chime', { volume: 0.2 });
         setTimeout(onComplete, 1000);
       }
     }

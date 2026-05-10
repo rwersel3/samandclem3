@@ -26,7 +26,7 @@ export default function Page7HoppyBusy({ audioEnabled, onComplete }: Page7HoppyB
       if (normalized > prev && normalized <= prev + 20) {
         if (normalized >= 85 && !completed.current) {
           completed.current = true;
-          play('success-chime', { volume: 0.6 });
+          play('success-chime', { volume: 0.2 });
           setTimeout(onComplete, 500);
         }
         return normalized;
