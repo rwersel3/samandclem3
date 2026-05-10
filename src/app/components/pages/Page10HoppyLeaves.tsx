@@ -16,7 +16,7 @@ export default function Page10HoppyLeaves({ audioEnabled }: Page10HoppyLeavesPro
   const handleWave = () => {
     setWaved(true);
     setHoppyWaving(true);
-    play('footsteps-grass', { volume: 0.4 });
+    play('leaves-rustle', { volume: 0.3 });
     setTimeout(() => setHoppyWaving(false), 1000);
   };
 

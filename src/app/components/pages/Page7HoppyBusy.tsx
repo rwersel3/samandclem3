@@ -13,12 +13,7 @@ interface Page7HoppyBusyProps {
 }
 
 export default function Page7HoppyBusy({ audioEnabled, onComplete }: Page7HoppyBusyProps) {
-  const { play, playLoop, stopAll } = useAudio(audioEnabled);
-
-  useEffect(() => {
-    playLoop('footsteps-grass', 0.1);
-    return () => stopAll();
-  }, [playLoop, stopAll]);
+  const { play } = useAudio(audioEnabled);
   const [pathProgress, setPathProgress] = useState(0);
   const [tracing, setTracing] = useState(false);
   const completed = useRef(false);

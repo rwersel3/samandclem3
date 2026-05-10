@@ -51,7 +51,7 @@ export default function Page6Hoppy({ audioEnabled }: Page6HoppyProps) {
 
         {/* Interactive Hoppy */}
         <button
-          onClick={() => { setMunching(true); play('bunny-hutch', { volume: 0.4 }); }}
+          onClick={() => { setMunching(true); play('collect-chime', { volume: 0.3 }); }}
           onAnimationEnd={() => setMunching(false)}
           className="absolute left-[62%] top-[70%] transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
         >

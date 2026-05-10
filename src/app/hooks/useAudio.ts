@@ -10,10 +10,10 @@ type SoundName =
   | 'collect-chime'
   | 'success-chime'
   | 'cat-meow'
-  | 'footsteps-grass'
   | 'leaves-rustle'
-  | 'whistle'
-  | 'bunny-hutch';
+  | 'whistle';
+
+const MAX_PLAY_SECONDS = 3;
 
 const audioCache = new Map<string, HTMLAudioElement>();
 
@@ -38,6 +38,8 @@ export function useAudio(enabled: boolean) {
     clone.play().catch(() => {});
     if (options?.loop) {
       loopingRef.current.push(clone);
+    } else {
+      setTimeout(() => { clone.pause(); clone.currentTime = 0; }, MAX_PLAY_SECONDS * 1000);
     }
     return clone;
   }, [enabled]);

@@ -113,10 +113,9 @@ export default function Page15AloneAgain({ audioEnabled }: Page15AloneAgainProps
         {/* Interactive bush */}
         <button
           onClick={() => { setBushRustled(!bushRustled); play('leaves-rustle', { volume: 0.5 }); }}
-          className="absolute right-[25%] top-[70%] transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
-        >
-          <div className="w-32 h-32" />
-        </button>
+          className="absolute cursor-pointer"
+          style={{ right: '10%', top: '55%', width: '30%', height: '40%' }}
+        />
 
         {bushRustled && (
           <motion.div
