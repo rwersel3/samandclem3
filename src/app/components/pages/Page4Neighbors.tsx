@@ -21,9 +21,9 @@ export default function Page4Neighbors({ audioEnabled }: Page4NeighborsProps) {
   }, [playLoop, stopAll]);
 
   const animalSounds: Record<string, () => void> = {
-    rabbit: () => play('collect-chime', { volume: 0.15 }),
-    salamander: () => play('collect-chime', { volume: 0.15 }),
-    chipmunk: () => play('collect-chime', { volume: 0.15 }),
+    rabbit: () => play('collect-chime', { volume: 0.05 }),
+    salamander: () => play('collect-chime', { volume: 0.05 }),
+    chipmunk: () => play('collect-chime', { volume: 0.05 }),
     bird: () => play('bird-chirp', { volume: 0.5 }),
   };
 

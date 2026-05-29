@@ -26,10 +26,10 @@ export default function Page3MeetSam({ audioEnabled, onComplete }: Page3MeetSamP
 
   const collectSnack = (id: number) => {
     if (!foundItems.includes(id)) {
-      play('collect-chime', { volume: 0.15 });
+      play('collect-chime', { volume: 0.05 });
       setFoundItems([...foundItems, id]);
       if (foundItems.length + 1 === snacks.length) {
-        play('success-chime', { volume: 0.2 });
+        play('success-chime', { volume: 0.08 });
         setTimeout(onComplete, 1000);
       }
     }
