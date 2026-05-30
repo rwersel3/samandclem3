@@ -20,7 +20,7 @@ export default function Page17ClemExplains({ audioEnabled }: Page17ClemExplainsP
 
   const nextDialogue = () => {
     if (dialogueStep < dialogues.length - 1) {
-      play('collect-chime', { volume: 0.05 });
+      play('collect-chime', { volume: 0.02 });
       setDialogueStep(dialogueStep + 1);
     }
   };
