@@ -30,7 +30,7 @@ export default function App() {
     const saved = localStorage.getItem('samAndClemProgress');
     return saved ? parseInt(saved, 10) : 1;
   });
-  const [audioEnabled, setAudioEnabled] = useState(true);
+  const [audioEnabled, setAudioEnabled] = useState(false);
   const [direction, setDirection] = useState(0);
   const { play } = useAudio(audioEnabled);
   const prevPage = useRef(currentPage);
